@@ -18,7 +18,7 @@ Assuming that user has a openshift account and has setup already the command lin
 8. git push (to github)
 9. git checkout openshift/master
 10. git push openshift
-11.rhc set-env ARTIFACTORY_HOME="/var/lib/openshift/53a4976e5973cabd5600022c/app-root/data/artifactory" -a artifactory 
+11. rhc set-env ARTIFACTORY_HOME="/var/lib/openshift/53a4976e5973cabd5600022c/app-root/data/artifactory" -a artifactory 
 
 Changelog
 ============================
