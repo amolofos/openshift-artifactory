@@ -7,6 +7,7 @@ http://openshift.github.io/documentation/oo_cartridge_guide.html#tomcat
 Build
 ============================
 Assuming that user has a openshift account and has setup already the command line tools.
+
 1. rhc create-app artifactory jbossews-2.0
 2. git clone https://github.com/amolofos/openshift-artifactory.git artifactory
 3. cd artifactory
@@ -15,9 +16,9 @@ Assuming that user has a openshift account and has setup already the command lin
 6. git merger openshift/master
 7. git add new files/commit
 8. git push (to github)
-9. git push (to openshift/master)
-
-
+9. git checkout openshift/master
+10. git push openshift
+11.rhc set-env ARTIFACTORY_HOME="/var/lib/openshift/53a4976e5973cabd5600022c/jbossews/webapps/artifactory" -a artifactory 
 
 Changelog
 ============================
